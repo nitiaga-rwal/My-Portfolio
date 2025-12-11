@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Niti Agarwal — Portfolio</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --accent:#8b5e3c; /* warm brown accent */
+      --muted:#7a6655;
+      --bg:#f5e9d6; /* beige background */
+      --card:#f2e5d2;
+      color-scheme: light;
+    }
+    *{box-sizing:border-box}
+    body{
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      background: var(--bg);
+      color:#3a2c21;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+    .nav-link{color:#5e4431!important}
+    .hero{
+      padding:6rem 0 4rem;
+    }
+    .hero .lead{color:rgba(233,237,241,.8)}
+    .card.project-card{background:var(--card); border:1px solid rgba(0,0,0,0.05);}
+    .soft-btn{border-radius:50px; padding:.45rem 1.05rem}
+    .accent{color:var(--accent)}
+    .badge-soft{background:rgba(139,94,60,0.15); color:var(--accent); border-radius:8px; padding:.2rem .5rem; font-weight:600}
+    .section-title{font-weight:700; letter-spacing:-0.02em}
+    footer{padding:3rem 0}
+    .avatar{width:80px; height:80px; object-fit:cover; border-radius:12px; border:2px solid rgba(255,255,255,0.05)}
+    @media(min-width:992px){
+      .hero{padding:8rem 0 6rem}
+    }
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent py-3">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <div style="width:44px;height:44px;background:linear-gradient(135deg,var(--accent),#8b5cf6);border-radius:10px"></div>
+        <div class="ms-1">
+          <div style="font-weight:700">Niti Agarwal</div>
+          <small style="color:var(--muted);font-size:.7rem">Designer • Writer • Creator</small>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-3"><a class="btn btn-outline-light soft-btn" href="#contact">Hire me</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <h1 class="display-6 fw-bold">Hi, I'm <span class="accent">Niti Agarwal</span> — I design, build, and elevate digital experiences.</h1>
+          <p class="lead mt-3">A passionate designer & developer crafting clean, intuitive, and polished interfaces with <strong>HTML, CSS</strong>, and <strong>Bootstrap</strong>. Minimalist. Responsive. Effortlessly elegant.</p>
+          <div class="d-flex gap-2 mt-4">
+            <a href="#projects" class="btn btn-primary soft-btn">View Work</a>
+            <a href="#contact" class="btn btn-outline-light soft-btn">Contact</a>
+          </div>
+          <div class="mt-4 d-flex gap-3 align-items-center">
+            <div class="badge-soft">Available for freelance</div>
+            <small class="text-muted">Based in Your City — Open to remote work</small>
+          </div>
+        </div>
+        <div class="col-lg-5 text-center mt-4 mt-lg-0">
+          <img src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="profile" class="avatar shadow-sm">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6">
+          <h2 class="section-title">About me</h2>
+          <p class="text-muted">I’m a passionate creator who loves clean design, strong storytelling and polished UI. I combine creative thinking with practical code to deliver small but meaningful digital experiences.</p>
+          <ul class="list-unstyled mt-3">
+            <li><strong>Education:</strong> Your degree or course</li>
+            <li><strong>Skills:</strong> HTML • CSS • JavaScript • Bootstrap • Git</li>
+            <li><strong>Interests:</strong> Design systems, dark aesthetics, fiction writing</li>
+          </ul>
+          <div class="mt-3">
+            <a href="#projects" class="btn btn-outline-light soft-btn">See projects</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="row g-3">
+            <div class="col-6">
+              <div class="card p-3 project-card h-100">
+                <h5 class="mb-1">Experience</h5>
+                <p class="mb-0 text-muted">Intern at XYZ, freelance projects, event design</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card p-3 project-card h-100">
+                <h5 class="mb-1">Tools</h5>
+                <p class="mb-0 text-muted">Figma, VSCode, GitHub, Chrome DevTools</p>
+              </div>
+            </div>
+            <div class="col-6 mt-3">
+              <div class="card p-3 project-card h-100">
+                <h5 class="mb-1">Languages</h5>
+                <p class="mb-0 text-muted">English, (add other languages)</p>
+              </div>
+            </div>
+            <div class="col-6 mt-3">
+              <div class="card p-3 project-card h-100">
+                <h5 class="mb-1">Hobbies</h5>
+                <p class="mb-0 text-muted">Reading, art, photography</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="py-5 bg-transparent">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="section-title">Selected projects</h2>
+        <small class="text-muted">Recent work</small>
+      </div>
+
+      <div class="row g-4">
+        <!-- Project Card 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card h-100 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1506765515384-028b60a970df?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" class="card-img-top" alt="Project thumbnail">
+            <div class="card-body">
+              <h5 class="card-title">Project One</h5>
+              <p class="card-text text-muted">A short description of the project, the goal and the technologies used.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <div class="small text-muted">HTML • Bootstrap</div>
+                <div>
+                  <a href="#" class="btn btn-sm btn-outline-light">Live</a>
+                  <a href="#" class="btn btn-sm btn-primary ms-2">Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card h-100 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" class="card-img-top" alt="Project thumbnail">
+            <div class="card-body">
+              <h5 class="card-title">Project Two</h5>
+              <p class="card-text text-muted">An app-style layout or a small UI build. Explain what you did here.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <div class="small text-muted">UI • CSS</div>
+                <div>
+                  <a href="#" class="btn btn-sm btn-outline-light">Live</a>
+                  <a href="#" class="btn btn-sm btn-primary ms-2">Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card h-100 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" class="card-img-top" alt="Project thumbnail">
+            <div class="card-body">
+              <h5 class="card-title">Project Three</h5>
+              <p class="card-text text-muted">A description that shows impact and value — what did this project achieve?</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <div class="small text-muted">Design • Prototype</div>
+                <div>
+                  <a href="#" class="btn btn-sm btn-outline-light">Live</a>
+                  <a href="#" class="btn btn-sm btn-primary ms-2">Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES / SKILLS -->
+  <section id="services" class="py-5">
+    <div class="container">
+      <h2 class="section-title mb-4">What I do</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card p-4 project-card h-100">
+            <h5>Web Design</h5>
+            <p class="text-muted">Designing simple, responsive websites and landing pages.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-4 project-card h-100">
+            <h5>Frontend Development</h5>
+            <p class="text-muted">Turning designs into clean, maintainable code using HTML/CSS/Bootstrap.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-4 project-card h-100">
+            <h5>Content & Copy</h5>
+            <p class="text-muted">Short impactful copywriting for websites and portfolios.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-5 bg-transparent">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="card p-4 project-card">
+            <h3 class="mb-3">Get in touch</h3>
+            <p class="text-muted">Want to work together? Send a quick message.</p>
+            <form action="mailto:your@email.com" method="post" enctype="text/plain">
+              <div class="mb-3">
+                <label class="form-label">Your name</label>
+                <input class="form-control" type="text" placeholder="Jane Doe">
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input class="form-control" type="email" placeholder="you@email.com">
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Message</label>
+                <textarea class="form-control" rows="4" placeholder="Tell me about your project"></textarea>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted">Or email me at <strong>your@email.com</strong></small>
+                <button class="btn btn-primary">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="text-center text-muted">
+    <div class="container">
+      <p class="mb-1">© <span id="year"></span> Niti Agarwal. All rights reserved.</p>
+      <p class="small">Made with ❤️ • <a href="#projects">See my work</a></p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Small helper: set copyright year automatically
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
